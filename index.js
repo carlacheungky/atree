@@ -45,7 +45,18 @@ function run() {
           foreground: "#00ffcc", // cyan spiral
           angleOffset: 0,
           factor: factor
-        })];
+        }),
+        new Spiral({
+          foreground: "#ffffff", // red Spiral
+          angleOffset: Math.PI,
+          factor: factor
+        }),
+        new Spiral({
+          foreground: "#ffffff", // cyan spiral
+          angleOffset: 0,
+          factor: factor
+        }),
+      ];
 
   renderFrame(); // animation loop starts here
 
